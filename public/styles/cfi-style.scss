@@ -1,0 +1,133 @@
+div.cfi-coin-ticker-widget {
+  width: 300px;
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px 10px;
+  padding-top: 25px;
+  min-height: 55px;
+  // font
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  color: #757575;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+
+  .cfi-coin-ticker {
+
+    .cfi-ticker-inner {
+      display: block;
+
+      .cfi-ticker-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+        width: 25%;
+        max-width: 80px;
+        height: auto;
+        max-height: 100px;
+      }
+
+      .cfi-ticker-top-info {
+        display: inline-block;
+        width: 69%;
+        vertical-align: middle;
+      }
+
+      .cfi-ticker-name {
+        display: block;
+        color: #2d2d2d;
+        font-weight: 700;
+        font-size: 22px;
+      }
+
+      .cfi-ticker-price {
+        font-size: 18px;
+        color: #2d2d2d;
+        font-weight: 700;
+      }
+
+      .cfi-ticker-change {
+        font-size: 18px;
+        margin-left: 5px;
+        font-weight: 700;
+        color: #43a047 !important;
+      }
+
+      .cfi-ticker-change-red {
+        color: #e53935 !important;
+      }
+
+      .cfi-ticker-title {
+        margin-top: 12px;
+      }
+
+      .cfi-ticker-body {
+        padding-top: 10px;
+      }
+
+      .cfi-ticker-additional-info {
+        float: left;
+      }
+
+      .cfi-ticker-graph {
+        display: block;
+        float: right;
+        border: 1px solid #e0e0e0;
+        width: 120px;
+        height: auto;
+        background-color: #fff;
+      }
+
+      .cfi-ticker-graph-center {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .cfi-coin-ticker-info {
+    overflow: hidden;
+    //background-color: #f1f4f5;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.3s;
+    font-size: 11px;
+    text-align: center;
+
+    a,
+    span {
+      display: block;
+      height: 100%;
+      padding-top: 7px;
+      color: #333;
+      text-decoration: none;
+      font-weight: inherit;
+      box-shadow: none !important;
+    }
+
+    a {
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+
+  // hover on widget
+  &:hover {
+    > .cfi-coin-ticker-info {
+      opacity: 0.9;
+    }
+  }
+}
